@@ -1,10 +1,33 @@
 package extraction.service;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import extraction.model.ExtractionModel;
 import extraction.model.LocationModel;
+import java.util.Collections;
 
 public final class ExtractionHelper
 {
+
+	public static List<Integer> getRandomNumbers()
+	{
+		// Long list of 48 elements:
+		List<Integer> longList = new ArrayList<Integer>();
+		for (int position = 1; position <= 48; position++)
+		{
+			longList.add(position);
+		}
+
+		// Shuffle List:
+		Collections.shuffle(longList);
+
+		// Cut list of 48 and get a short list of 35 elements:
+		List<Integer> shortList = new ArrayList<Integer>();
+		shortList = longList.subList(0, 35);
+		return shortList;
+
+	}
 
 	public static ExtractionModel CreateStartingExtractionModel(ExtractionModel extractionModelToBeFilled)
 	{
