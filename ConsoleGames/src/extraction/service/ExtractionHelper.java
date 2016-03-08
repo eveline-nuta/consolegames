@@ -9,6 +9,28 @@ import java.util.Collections;
 
 public final class ExtractionHelper
 {
+	public static List<Boolean> CreateClovers()
+	{
+		// List with 2 true flags
+		List<Boolean> cloverList = new ArrayList<Boolean>();
+		for (int counter = 0; counter < 35; counter++)
+		{
+			if (counter < 2)
+			{
+				cloverList.add(counter, true);
+			}
+			else
+			{
+				cloverList.add(counter, false);
+			}
+		}
+		// Shuffle List:
+		Collections.shuffle(cloverList);
+
+		return cloverList;
+
+	}
+
 
 	public static List<Integer> getRandomNumbers()
 	{

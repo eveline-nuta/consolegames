@@ -21,5 +21,24 @@ public class ExtractionModel
 	{
 		this.locations = locations;
 	}
+	public  void Print()
+	{
+		System.out.print("Value "+ " "+"Award"+ " " +"  Lucky" );
+		System.out.println(" ");
+		
+		for(LocationModel element:getLocations())
+		{
+		  /*try
+			{
+				Thread.sleep(1000);
+			}
+			catch (InterruptedException e)
+			{
+				e.printStackTrace();
+			}*/
+			element.Print();
+		}
+		
+	}
 
 }

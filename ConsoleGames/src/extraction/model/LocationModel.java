@@ -49,5 +49,17 @@ public class LocationModel
 	{
 		this.value = value;
 	}
+	
+	public void Print()
+	{
+		System.out.print(this.getValue());
+
+		System.out.print("       "+this.getAward());
+
+		System.out.print("       "+this.isLucky());
+		
+		System.out.println(" ");
+		
+	}
 
 }

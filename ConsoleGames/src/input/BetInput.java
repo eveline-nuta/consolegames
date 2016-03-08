@@ -9,14 +9,57 @@ import java.util.*;
 public final class BetInput
 {
 
+/*	private static double getDoubleInput(BufferedReader bufferRead)
+	{
+		double result = 2.0;
+		try
+		{
+			String text = " ";
+			do
+			{
+				System.out.println("Insert amount of money : ");
+				text = bufferRead.readLine();
+			}
+			while (validateInput(text) == false);
+			result = Double.parseDouble(text);
+
+		}
+		catch (IOException e)
+		{
+			e.printStackTrace();
+		}
+		return result;
+	}
+
+	private static Boolean validateInput(String text)
+	{
+		if(text.isEmpty())
+		{
+			return false;
+		}
+		char[] charArray = text.toCharArray();
+		for(int counter = 0 ; counter < charArray.length ; counter++)
+		{
+			if(!Character.isDigit(charArray[counter]))
+			{
+				return false;
+			}
+		}
+		return true;
+	}*/
+
 	public static BetModel Read()
 	{
-		System.out.println("Insert amount of money : ");
+
 		try
 		{
 			BufferedReader bufferRead = new BufferedReader(new InputStreamReader(System.in));
 
-			double moneyAmount = Double.parseDouble(bufferRead.readLine());
+			//double moneyAmount = getDoubleInput(bufferRead);
+			
+			System.out.println("Insert amount of money : ");
+			double moneyAmount=Double.parseDouble(bufferRead.readLine());
+			
 			System.out.println("Insert 6 numbers: ");
 			List<Integer> list = new ArrayList<Integer>();
 
