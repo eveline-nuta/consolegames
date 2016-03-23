@@ -40,7 +40,7 @@ public class ExtractionService
 		for (int position = 0; position < 30; position++)
 		{
 			extractionModel.getLocations().get(position + 5).setLucky(cloverList.get(position));
-			//returneaza un faals de pe poz 5
+			
 		}
 	}
 }
