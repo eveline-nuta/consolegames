@@ -31,7 +31,6 @@ public class Source
 		winningResult = Checker.Check(extractionModel, model);
 		double wonSum=Calculator.CalculateResult(winningResult, model);
 		Output.Print(wonSum);
-
 	}
 
 }
